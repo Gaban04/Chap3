@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+    <html lang="en">
+<head> <metacharset="utf-8"> <title>FIXME!</title>
+    <link rel="stylesheet" href="./css/style2.css">
+    <p id="st">This is a picture of NYC.</p>
+    <p id="nd">This is a beautiful scenery of a mountain in Canada.</p>
+    <p id="rd">This is a picture of famous shooters game Valorant.</p>
+
+    <div class="row">
+        <div class="column">
+          <img src="./img/nyc.jpg" alt="nyc" style="width:100%">
+         </div>
+
+           <div class="column">
+          <img src="./img/nature.jpg" alt="Forest" style="width:100%">
+        </div>
+
+        <div class="column">
+          <img src="./img/valrant.jpg" alt="Mountains" style="width:100%">
+        </div>
+
+     
+</head>
+    </body>
+</html>
+
+CSS
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
